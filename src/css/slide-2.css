@@ -1,0 +1,143 @@
+.slider__slide-2 {
+    size: 1024px 768px;
+    position: relative;
+    z-index: -5;
+
+    background: url(../images/slide-2/background.png) no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+.slide-2__pink-sperm-1,
+.slide-2__pink-sperm-2,
+.slide-2__pink-sperm-3,
+.slide-2__pink-sperm-4,
+.slide-2__pink-sperm-5 {
+    position: absolute;
+    animation: pink-sperm-animation 3s linear forwards;
+}
+
+.slide-2__pink-sperm-1 {
+    width: 24%;
+    top: 10%;
+    right: 5%;
+}
+
+.slide-2__pink-sperm-2 {
+    width: 50%;
+
+    top: 12%;
+    right: -7%;
+}
+
+.slide-2__pink-sperm-3 {
+    width: 42%;
+
+    top: 55%;
+    right: -34%;
+}
+
+.slide-2__pink-sperm-4 {
+    width: 87%;
+
+    top: 15%;
+    right: -27%;
+}
+
+.slide-2__pink-sperm-5 {
+    width: 19%;
+
+    top: 70%;
+    right: -11%;
+}
+
+
+@keyframes pink-sperm-animation {
+    from {
+        transform: translate(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-5%);
+        opacity: 1;
+    }
+}
+
+.slide-2__text-content {
+    margin: 14% 0 0 7%;
+
+    &_title {
+        width: 5%;
+        font-size: 29px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        color: #242424;
+        font-family: 'DIN Pro';
+        margin-bottom: 7%;
+    }
+
+    &_text-block {
+        width: 85%;
+        height: 400px;
+
+        position: relative;
+
+        .text-block_text {
+            height: 90%;
+
+            padding-left: 7%;
+
+            overflow-y: scroll;
+            direction: rtl;
+
+            span {
+                width: 95%;
+                height: 105%;
+                display: block;
+
+                position: absolute;
+                top: -7%;
+                left: 8%;
+
+                background-color: #ffffff;
+                box-shadow: 0px -15px 70px #ffffff inset;
+                border-radius: 50px;
+            }
+
+            p {
+                padding: 3%;
+                font-size: 24px;
+                font-family: 'Gilroy';
+                letter-spacing: 3px;
+                text-align: left;
+
+                position: relative;
+                z-index: 5;
+            }
+
+            &::-webkit-scrollbar {
+                width: 20px;
+                border-radius: 5px;
+                background: linear-gradient(to left,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0) 30%,
+                        rgba(0, 0, 0, 1) 50%,
+                        rgba(0, 0, 0, 0) 70%,
+                        rgba(0, 0, 0, 0) 100%);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #cf588d;
+                border-radius: 10px;
+
+                box-shadow: 3px 3px 7px #e198b9 inset, -3px -3px 7px 0px #a04674 inset;
+            }
+
+        }
+
+
+    }
+}

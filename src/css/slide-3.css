@@ -1,0 +1,10 @@
+.slider__slide-3 {
+    size: 1024px 768px;
+    position: relative;
+    z-index: -5;
+
+    background: url(../images/slide-3/background.png) no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
