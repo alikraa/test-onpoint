@@ -9,43 +9,46 @@
     overflow: hidden;
 }
 
-.slide-2__pink-sperm-1,
-.slide-2__pink-sperm-2,
-.slide-2__pink-sperm-3,
-.slide-2__pink-sperm-4,
-.slide-2__pink-sperm-5 {
+.pink-sperm-1,
+.pink-sperm-2,
+.pink-sperm-3,
+.pink-sperm-4,
+.pink-sperm-5 {
     position: absolute;
+}
+
+.slide-2__pink-sperm-active {
     animation: pink-sperm-animation 3s linear forwards;
 }
 
-.slide-2__pink-sperm-1 {
+.pink-sperm-1 {
     width: 24%;
     top: 10%;
     right: 5%;
 }
 
-.slide-2__pink-sperm-2 {
+.pink-sperm-2 {
     width: 50%;
 
     top: 12%;
     right: -7%;
 }
 
-.slide-2__pink-sperm-3 {
+.pink-sperm-3 {
     width: 42%;
 
     top: 55%;
     right: -34%;
 }
 
-.slide-2__pink-sperm-4 {
+.pink-sperm-4 {
     width: 87%;
 
     top: 15%;
     right: -27%;
 }
 
-.slide-2__pink-sperm-5 {
+.pink-sperm-5 {
     width: 19%;
 
     top: 70%;
@@ -135,9 +138,6 @@
 
                 box-shadow: 3px 3px 7px #e198b9 inset, -3px -3px 7px 0px #a04674 inset;
             }
-
         }
-
-
     }
 }
