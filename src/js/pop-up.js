@@ -106,4 +106,4 @@ function renderList() {
   slicedList.forEach((elem) => list.append(elem));
 }
 
-export { defaultValue, renderList };
+export { defaultValue, increment, renderList };
